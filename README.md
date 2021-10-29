@@ -57,3 +57,9 @@ _WIP: README Goes here_
 >Test: "If a number contains both a 2 and a 3, it will substitute "Won't you be my neighbor?"."  
 >Code: ```neighbor("23");```  
 >Expected Output: ```[0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, ... 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]```
+
+### **Describe: listMaker()**
+
+>Test: "It should accept an array and return it as a joined string with each item of the array wrapped in ol tags."  
+>Code: ```listMaker([0, "Beep!", "Boop!"]);```  
+>Expected Output: ```"<ol>0</ol><ol>Beep!</ol><ol>Boop!</ol>"```
