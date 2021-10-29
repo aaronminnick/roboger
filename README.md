@@ -21,3 +21,11 @@ _WIP: README Goes here_
 >Code: ```neighbor(NaN);```  
 >Alt.Code: ```neighbor(Infinity);```    
 >Expected Output: ```null```
+
+>Test: "It should substitute "Beep!" in the return array for the number 1."  
+>Code: ```neighbor(1);```  
+>Expected Output: ```[0, "Beep!"]```
+
+>Test: "It should substitute "Beep!" in the return array for any number containing a 1."  
+>Code: ```neighbor("11");```  
+>Expected Output: ```[0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]```
