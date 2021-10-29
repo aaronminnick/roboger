@@ -8,7 +8,11 @@ function neighbor(number) {
 
   let returnArray = [];
   for (let i = 0; i <= number; i++) {
-    returnArray.push(i);
+    if (i.toString().includes("1")) {
+      returnArray.push("Beep!");
+    } else {
+      returnArray.push(i);
+    }
   }
   return returnArray;
 }
