@@ -16,3 +16,8 @@ _WIP: README Goes here_
 >Test: "It should return null if not given a number as input."  
 >Code: ```neighbor("0");```  
 >Expected Output: ```null```
+
+>Test: "It should return null if given NaN or Infinity as input (which js considers as numbers)."  
+>Code: ```neighbor(NaN);```  
+>Alt.Code: ```neighbor(Infinity);```    
+>Expected Output: ```null```
