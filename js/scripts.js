@@ -1,7 +1,7 @@
 //Helper Functions
 function listMaker(array) {
-  returnString = array.join("</ol><ol>");
-  return "<ol>" + returnString + "</ol>";
+  returnString = array.join("</li><li>");
+  return "<li>" + returnString + "</li>";
 }
 
 
@@ -30,6 +30,6 @@ function neighbor(number) {
 $(document).ready(function() {
   $("#number-form").submit(function(event) {
     event.preventDefault();
-    $("#output").html("<p>" + neighbor(parseInt($("#number-input").val())) + "</p>");
+    $("#output ul").html(listMaker(neighbor(parseInt($("#number-input").val()))));
   });
 });

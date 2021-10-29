@@ -60,10 +60,10 @@ _WIP: README Goes here_
 
 ### **Describe: listMaker()**
 
->Test: "It should accept an array and return it as a joined string with each item of the array wrapped in ol tags."  
+>Test: "It should accept an array and return it as a joined string with each item of the array wrapped in li tags."  
 >Code: ```listMaker([0, "Beep!", "Boop!"]);```  
->Expected Output: ```"<ol>0</ol><ol>Beep!</ol><ol>Boop!</ol>"```
+>Expected Output: ```"<li>0</li><li>Beep!</li><li>Boop!</li>"```
 
 >Test: "It should work as intended for an array of only one item."  
 >Code: ```listMaker([0]);```  
->Expected Output: ```"<ol>0</ol>"```
+>Expected Output: ```"<li>0</li>"```
