@@ -29,3 +29,15 @@ _WIP: README Goes here_
 >Test: "It should substitute "Beep!" in the return array for any number containing a 1."  
 >Code: ```neighbor("11");```  
 >Expected Output: ```[0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]```
+
+>Test: "It should substitute "Boop!" in the return array for the number 2."  
+>Code: ```neighbor(2);```  
+>Expected Output: ```[0, "Beep!", "Boop!"]```
+
+>Test: "It should substitute "Boop!" in the return array for any number containing a 2."  
+>Code: ```neighbor("12");```  
+>Expected Output: ```[0, "Beep!", 2, ... 9, "Beep!", "Beep!", "Boop!"]```
+
+>Test: "If a number contains both a 1 and a 2, it will substitute "Boop!"."  
+>Code: ```neighbor("12");```  
+>Expected Output: ```[0, "Beep!", 2, ... 9, "Beep!", "Beep!", "Boop!"]```
