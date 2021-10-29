@@ -1,9 +1,59 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+  text-align: center;
+}
+
+.jumbotron {
+  padding: 0px;
+  line-height: .4;
+  border-radius: 1rem;
+}
+
+#rog-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60%;
+  resize: none;
+  overflow: hidden;
+  color: limegreen;
+  background-color: black;
+}
+
 #output {
   height: 400px;
+  line-height: 1;
   overflow: auto;
-  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid darkslategrey;
+  background-color: black;
+  color: limegreen
+}
+
+#output::-webkit-scrollbar {
+  margin-right: 20px;
 }
 
 #output ul {
   list-style: none;
 }
+
+#number-input {
+  border: 2px solid darkslategrey;
+  margin-bottom: 5px;
+}
+
+#number-input:in-range {
+  background-color: limegreen;
+}
+
+#number-input:out-of-range {
+  background-color: orangered;
+}
+
+#number-input:out-of-range + label::after{
+  content: 'ERROR: This unit is a 16-bit robot and personality configuration has been calibrated to "positive". As such, this unit only accepts values between 0 and 65535.';
+}
+
