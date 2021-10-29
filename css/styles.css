@@ -32,10 +32,6 @@ h4 {
   border: 2px solid darkslategrey;
 }
 
-#sweater {
-  display: none;
-}
-
 #output {
   height: 400px;
   line-height: 1;

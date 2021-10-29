@@ -33,7 +33,7 @@ $ start index.html
 **Or** you may use the green "Code" button to download the files to your computer. Then simply extract the package, and open index.html with your browser of choice.
 
 ### Known Bugs/Issues:
-* The program bogs down upwards of ~20000 as an input.
+* The program bogs down upwards of ~10000 as an input. For now, there is a humorous alert message to dismiss to give you something to do while you wait for the results to load.
 
 _Thanks for reading! Please feel free to contact me with feedback!_
 ***
