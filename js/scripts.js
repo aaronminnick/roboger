@@ -22,3 +22,9 @@ function neighbor(number) {
 }
 
 //UI Logic
+$(document).ready(function() {
+  $("#number-form").submit(function(event) {
+    event.preventDefault();
+    $("#output").html("<p>" + neighbor(parseInt($("#number-input").val())) + "</p>");
+  });
+});
