@@ -1,16 +1,25 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  background-color: darkgray;
 }
 
 h4 {
   text-align: center;
+  font-weight: bolder;
+  margin-top: 15px;
 }
 
 .jumbotron {
-  padding: 0px;
+  padding: .6rem;
   line-height: .4;
-  border-radius: 1rem;
+  border: 1px solid darkslategrey;
+  border-radius: .5rem;
+  background-color: dimgray;
+  box-shadow: 0px 0px 2px 1px dimgray;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 
 #rog-pic {
   display: block;
@@ -21,19 +30,18 @@ h4 {
   overflow: hidden;
   color: limegreen;
   background-color: black;
+  border: 2px solid darkslategrey;
 }
 
 #output {
   height: 400px;
   line-height: 1;
-  overflow: auto;
   border: 2px solid darkslategrey;
   background-color: black;
-  color: limegreen
-}
-
-#output::-webkit-scrollbar {
-  margin-right: 20px;
+  color: limegreen;
+  overflow: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #output ul {
