@@ -1,9 +1,11 @@
 //Helper Functions
 function listMaker(array) {
-  returnString = array.join("</li><li>");
-  return "<li>" + returnString + "</li>";
+  let returnString = "";
+  array.forEach(function(element, i) {
+    returnString = returnString + "<li>" + i.toString(2) + ": " + element.toString() +"</li>";
+  });
+  return returnString;
 }
-
 
 //Business Logic
 function neighbor(number) {

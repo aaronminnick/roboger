@@ -3,3 +3,7 @@
   overflow: auto;
   font-family: 'Courier New', Courier, monospace;
 }
+
+#output ul {
+  list-style: none;
+}

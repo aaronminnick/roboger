@@ -67,3 +67,7 @@ _WIP: README Goes here_
 >Test: "It should work as intended for an array of only one item."  
 >Code: ```listMaker([0]);```  
 >Expected Output: ```"<li>0</li>"```
+
+>Test: "It should return array values preceded by the number value in binary."
+>Code: ```listMaker([0, "Beep!", "Boop!]");```  
+>Expected Output: ```<li>0: 0</li><li>1: Beep!</li><li>10: Boop!</li>```
