@@ -1,9 +1,50 @@
-_WIP: README Goes here_
+## Mr. Roboger's Neighborhood
+#### _by Aaron Minnick_
+### Technologies Used:
+* HTML
+* CSS (including Bootstrap)
+* Javascript (Including jQuery)
 
-----------
-## TDD Specs
+This is the week 3 independent project at [Epicodus](https://www.epicodus.com). The goal of the project is to take a number from the user and return a range of numbers from 0 to the inputted number with the following substitutions made:
 
-### **Describe: neighbor()**
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+* _Presence of a 3 overrules a 1 or 2, and presence of a 2 overules a 1. So 21 follows the third rule, and 31 or 213 follow the third._
+
+We were required to use a loop and to practice test driven development. To see a list of my TDD specs, please scroll to the end of the readme.
+
+To check out the project, click [HERE](https://aaronminnick.github.io/roboger/). _(For an easter egg, try putting in a negative number, or a very large number.)_ Or, follow the setup instructions below to launch the page from a local copy on your machine.
+
+### Setup Instructions:
+_(Please note, the below instructions are using gitbash on a Windows computer. Commands may vary if you are using a different OS or terminal program.)_
+* Initialize a local repository in your desired location using the terminal:
+```
+$ git init
+```
+* Clone this repository to your local repository (the link may be easily got using the green "Code" button on the github page):
+```
+$ git clone https://github.com/aaronminnick/roboger
+```
+* Open index.html with your default browser:
+```
+$ start index.html
+```
+**Or** you may use the green "Code" button to download the files to your computer. Then simply extract the package, and open index.html with your browser of choice.
+
+### Known Bugs/Issues:
+* The program bogs down upwards of ~20000 as an input.
+
+_Thanks for reading! Please feel free to contact me with feedback!_
+***
+#### [License: CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+![](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
+#### Copyright (c) 2021 Aaron Minnick
+
+***
+### TDD Specs
+
+#### **Describe: neighbor()**
 
 >Test: "It should return an array containing 0 if the number 0 is inputted."  
 >Code: ```neighbor(0);```  
@@ -58,7 +99,7 @@ _WIP: README Goes here_
 >Code: ```neighbor("23");```  
 >Expected Output: ```[0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, ... 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]```
 
-### **Describe: listMaker()**
+#### **Describe: listMaker()**
 
 >Test: "It should accept an array and return it as a joined string with each item of the array wrapped in li tags."  
 >Code: ```listMaker([0, "Beep!", "Boop!"]);```  
