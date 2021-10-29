@@ -1,4 +1,9 @@
 //Helper Functions
+function listMaker(array) {
+  returnString = array.join("</ol><ol>");
+  return "<ol>" + returnString + "</ol>";
+}
+
 
 //Business Logic
 function neighbor(number) {
